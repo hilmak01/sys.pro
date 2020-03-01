@@ -1,0 +1,25 @@
+{
+    "name": "novamonline/mysite",
+    "description": "",
+    "authors": [
+        {
+            "name": "Novam Online",
+            "email": "novam.online@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\MySite\\Providers\\MySiteServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\MySite\\": ""
+        }
+    }
+}

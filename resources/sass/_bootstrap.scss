@@ -1,0 +1,21 @@
+.d-flex {
+    display: flex;
+
+    &.space-between {
+        justify-content: space-between;
+    }
+
+    &.auto>* {
+        flex: auto;
+    }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}

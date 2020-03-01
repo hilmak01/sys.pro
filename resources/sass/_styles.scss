@@ -1,0 +1,49 @@
+html,
+body,
+#app {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden auto;
+    margin: 0;
+    padding: 0;
+}
+
+@import 'layouts';
+
+form {
+    background-color: $white;
+
+    fieldset {
+        margin-top: 0.5rem;
+
+        legend {
+            text-transform: uppercase;
+            padding: 0.25rem 0.5rem;
+            border: 1px solid $lightgray;
+            background-color: white;
+            border-bottom: none;
+        }
+
+        box-shadow: 1px 1px 10px 1px #bbb;
+        padding: 1rem;
+    }
+
+    input:not([type="radio"]):not([type="checkbox"]),
+    select,
+    textarea {
+        width: 100%;
+        border-color: $darkgray;
+    }
+
+    div {
+        margin-bottom: 1rem;
+    }
+
+    .errors {
+        color: darkred;
+    }
+
+    .success {
+        color: darkgreen;
+    }
+}

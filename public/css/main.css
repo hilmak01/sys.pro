@@ -1,0 +1,108 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);.d-flex {
+  display: flex;
+}
+
+.d-flex.space-between {
+  justify-content: space-between;
+}
+
+.d-flex.auto > * {
+  flex: auto;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+html,
+body,
+#app {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden auto;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "navbar navbar navbar" "sidebar content settings" "footer footer footer";
+}
+
+.main .navbar {
+  grid-area: navbar;
+  background-color: #ccc;
+}
+
+.main .sidebar {
+  grid-area: sidebar;
+  background-color: darkblue;
+}
+
+.main .content {
+  grid-area: content;
+}
+
+.main .footer {
+  grid-area: footer;
+  background-color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    grid-template-columns: auto;
+  }
+}
+
+form {
+  background-color: white;
+}
+
+form fieldset {
+  margin-top: 0.5rem;
+  box-shadow: 1px 1px 10px 1px #bbb;
+  padding: 1rem;
+}
+
+form fieldset legend {
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-bottom: none;
+}
+
+form input:not([type=radio]):not([type=checkbox]),
+form select,
+form textarea {
+  width: 100%;
+  border-color: darkgray;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+form .errors {
+  color: darkred;
+}
+
+form .success {
+  color: darkgreen;
+}
+

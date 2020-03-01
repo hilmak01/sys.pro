@@ -1,0 +1,13 @@
+{
+    "name": "MySite",
+    "alias": "mysite",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\MySite\\Providers\\MySiteServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
